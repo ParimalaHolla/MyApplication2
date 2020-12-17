@@ -36,38 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//        signOut.setOnClickListener {
-//            webAuth.signOut(this,object : RequestCallback<Int,AuthorizationException>{
-//                override fun onSuccess(result: Int) { //6
-//                    if (result == BaseAuth.SUCCESS) { //0
-//                        Toast.makeText(this@MainActivity,"SIGNED OUT ALL",Toast.LENGTH_SHORT).show()
-//                        Log.d("MainActivity","SIGNED_OUT")
-//                    }
-//                    if (result == BaseAuth.FAILED_CLEAR_SESSION) {  //8
-//                        Toast.makeText(this@MainActivity,"FAILED CLEAR SESSION",Toast.LENGTH_SHORT).show()
-//                        Log.d("MainActivity","FAILED CLEAR SESSION")
-//                    }
-//                    if (result == BaseAuth.FAILED_REVOKE_ACCESS_TOKEN) {  //1
-//                        Toast.makeText(this@MainActivity,"FAILED REVOKE ACCESS TOKEN",Toast.LENGTH_SHORT).show()
-//                        Log.d("MainActivity","FAILED_REVOKE_ACCESS_TOKEN")
-//                    }
-//                    if (result == BaseAuth.FAILED_REVOKE_REFRESH_TOKEN) {  //2
-//                        Toast.makeText(this@MainActivity,"failed_revoke_refresh_token",Toast.LENGTH_SHORT).show()
-//                        Log.d("MainActivity","FAILED_REVOKE_REFRESH_TOKEN")
-//                    }
-//                    if (result == BaseAuth.FAILED_CLEAR_DATA) {  //4
-//                        Toast.makeText(this@MainActivity,"failed_clear_data",Toast.LENGTH_SHORT).show()
-//                        Log.d("MainActivity","FAILED_CLEAR_DATA")
-//                    }
-//                }
-//
-//                override fun onError(msg: String?, error: AuthorizationException?) {
-//                    Log.d("MainActivity","${error?.error} onError",error)
-//                    Toast.makeText(this@MainActivity,error?.toJsonString(),Toast.LENGTH_SHORT).show()
-//                }
-//
-//            })
-//        }
+
 
     private fun setupWebAuth() {
         val oidcConfig = OIDCConfig.Builder()
